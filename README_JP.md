@@ -275,17 +275,17 @@ Pake の開発はこれらのハッカーたちなしにはあり得ませんで
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/Pake-Actions">
-                    <img src="https://avatars.githubusercontent.com/u/126550811?v=4" width="90;" alt="Pake-Actions"/>
-                    <br />
-                    <sub><b>Pake Actions</b></sub>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/MaiKuraki">
                     <img src="https://avatars.githubusercontent.com/u/12414727?v=4" width="90;" alt="MaiKuraki"/>
                     <br />
                     <sub><b>CycloneMagnum</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Pake-Actions">
+                    <img src="https://avatars.githubusercontent.com/u/126550811?v=4" width="90;" alt="Pake-Actions"/>
+                    <br />
+                    <sub><b>Pake Actions</b></sub>
                 </a>
             </td>
             <td align="center">
