@@ -164,6 +164,14 @@ ${green('|_|   \\__,_|_|\\_\\___|  can turn any webpage into a desktop app with 
         .hideHelp(),
     )
     .addOption(
+      new Option(
+        '--multi-window',
+        'Allow opening multiple windows within one app instance',
+      )
+        .default(DEFAULT.multiWindow)
+        .hideHelp(),
+    )
+    .addOption(
       new Option('--start-to-tray', 'Start app minimized to tray')
         .default(DEFAULT.startToTray)
         .hideHelp(),
@@ -174,6 +182,14 @@ ${green('|_|   \\__,_|_|\\_\\___|  can turn any webpage into a desktop app with 
         'Keep every link inside the Pake window instead of opening external handlers',
       )
         .default(DEFAULT.forceInternalNavigation)
+        .hideHelp(),
+    )
+    .addOption(
+      new Option(
+        '--internal-url-regex <string>',
+        'Regex pattern to match URLs that should be considered internal',
+      )
+        .default(DEFAULT.internalUrlRegex)
         .hideHelp(),
     )
     .addOption(
@@ -225,6 +241,11 @@ ${green('|_|   \\__,_|_|\\_\\___|  can turn any webpage into a desktop app with 
       new Option('--new-window', 'Allow new window for third-party login')
         .default(DEFAULT.newWindow)
         .hideHelp(),
+    )
+    .option(
+      '--install',
+      'Auto-install app to /Applications (macOS) after build and remove local bundle',
+      DEFAULT.install,
     )
     .version(packageJson.version, '-v, --version')
     .configureHelp({
